@@ -1,0 +1,27 @@
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+.vscode/
+build/
+ios/Flutter/App.framework/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/flutter_assets/
+macos/Flutter/Flutter.podspec
+.metadata
+.packages
+.pub-cache/
+.pub/
+.symlinks/
+android/gradle.properties
+android/local.properties
+android/app/debug.keystore
+android/app/key.properties
+android/app/src/debug/key.properties
+*.iml
+*.log
+*~
+*.patch
+*.swp
