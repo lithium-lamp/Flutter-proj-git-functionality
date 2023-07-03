@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'My App',
-      home: HomeScreen(), // Use the HomeScreen class as the home parameter
+      home: SettingsScreen(), // Use the HomeScreen class as the home parameter
     );
   }
 }
