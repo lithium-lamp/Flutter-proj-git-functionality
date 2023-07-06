@@ -5,7 +5,8 @@
         android:icon="@mipmap/ic_launcher">
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="YOUR-KEY-HERE"/>
+            String apiKey = BuildConfig.API_KEY; //this may not work
+            android:value=apiKey/>
 
         <activity
             android:name=".MainActivity"
