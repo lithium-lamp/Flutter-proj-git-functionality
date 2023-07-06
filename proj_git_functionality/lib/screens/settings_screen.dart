@@ -1,50 +1,60 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '/widgets/app_layout.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Settings'),
-      ),
-      body: ListView(
+    return AppLayout(
+      title: 'Settings',
+      child: ListView(
         children: [
-          ListTile(
-            leading: const Icon(Icons.notifications),
-            title: const Text('Push Notifications'),
-            trailing: Switch(
-              value: true,
-              onChanged: (value) {
-                // Handle switch value change
-              },
-            ),
+          CupertinoFormSection(
+            header: const Text('Notifications'),
+            children: [
+              CupertinoFormRow(
+                prefix: const Text('Push Notifications'),
+                child: CupertinoSwitch(
+                  value: true,
+                  onChanged: (value) {
+                    // Handle switch value change
+                  },
+                ),
+              ),
+            ],
           ),
-          ListTile(
-            leading: const Icon(Icons.dark_mode),
-            title: const Text('Dark Mode'),
-            trailing: Switch(
-              value: false,
-              onChanged: (value) {
-                // Handle switch value change
-              },
-            ),
+          CupertinoFormSection(
+            header: const Text('Appearance'),
+            children: [
+              CupertinoFormRow(
+                prefix: const Text('Dark Mode'),
+                child: CupertinoSwitch(
+                  value: false,
+                  onChanged: (value) {
+                    // Handle switch value change
+                  },
+                ),
+              ),
+            ],
           ),
-          ListTile(
-            leading: const Icon(Icons.language),
-            title: const Text('Language'),
-            trailing: const Text('English'),
-            onTap: () {
-              // Handle language selection
+          CupertinoFormSection(
+            header: const Text('Language'),
+            children: const [
+              CupertinoFormRow(
+                prefix: Text('Language'),
+                
+                child: Text('English'),
+              ),
+            ],
+          ),
+          CupertinoButton(
+            onPressed: () {
+              // Handle sign out action
             },
-          ),
-          ListTile(
-            leading: const Icon(Icons.info),
-            title: const Text('About'),
-            onTap: () {
-              // Handle about screen navigation
-            },
+            color: CupertinoColors.systemRed,
+            child: const Text('Sign Out'),
           ),
         ],
       ),
