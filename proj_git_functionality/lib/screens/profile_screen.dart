@@ -1,41 +1,62 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+//import 'package:flutter/material.dart';
+import '/widgets/app_layout.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Profile'),
-      ),
-      body: const Padding(
-        padding: EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              radius: 64,
-              backgroundImage: AssetImage('assets/profilepicture.jpg'),
-            ),
-            SizedBox(height: 16),
-            Text(
-              'John Doe',
+    return AppLayout(
+      title: 'Profile',
+      child: ListView(
+        children: const [
+          Text(
+              'This is the profile screen, which is quite empty right now',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8),
-            Text(
-              'Software Engineer',
-              style: TextStyle(fontSize: 18),
+        ],
+      ),
+    );
+  }
+}
+
+
+/*
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Login'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Email',
+              ),
             ),
-            SizedBox(height: 16),
-            ListTile(
-              leading: Icon(Icons.email),
-              title: Text('johndoe@example.com'),
+            const SizedBox(height: 16),
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Password',
+              ),
+              obscureText: true,
             ),
-            ListTile(
-              leading: Icon(Icons.phone),
-              title: Text('123-456-7890'),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () {
+                // Perform login authentication
+              },
+              child: const Text('Login'),
             ),
           ],
         ),
@@ -43,3 +64,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+*/

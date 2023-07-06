@@ -1,9 +1,10 @@
 //import 'package:flutter/material.dart';
 
 import './screens/home_screen.dart';
-import './screens/login_screen.dart';
+//import './screens/login_screen.dart';
 import './screens/profile_screen.dart';
 import './screens/settings_screen.dart';
+import './screens/map_screen.dart';
 
 
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
   
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    LoginScreen(),
+    MapScreen(),
     SettingsScreen(),
     ProfileScreen(),
   ];
@@ -74,12 +75,12 @@ class _MyAppState extends State<MyApp> {
                   text: 'Home',
                 ),
                 GButton(
-                  icon: LineIcons.heart,
-                  text: 'Likes',
+                  icon: LineIcons.map,
+                  text: 'Map',
                 ),
                 GButton(
-                  icon: LineIcons.search,
-                  text: 'Search',
+                  icon: LineIcons.newspaper,
+                  text: 'History',
                 ),
                 GButton(
                   icon: LineIcons.user,
