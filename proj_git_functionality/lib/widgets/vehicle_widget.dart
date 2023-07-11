@@ -1,29 +1,59 @@
 import 'package:flutter/cupertino.dart';
 
 class VehicleWidget extends StatelessWidget {
-  final String name;
-  final String licenseplate;
-  final String icon;
+  final IconData icon;
+  final String title;
+  final String text;
 
-  //final Widget child;
-
-  const VehicleWidget({super.key, required this.name, required this.licenseplate, required this.icon});
+  const VehicleWidget({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoListSection.insetGrouped(
+    return GestureDetector(
+      onTap: () {
+        // Handle action chip tap
+        // Add your functionality here
+      },
+      child: CupertinoListSection.insetGrouped(
+        //padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         children: [
-              CupertinoListTile(
-                title: Text(name),
-              ),
-              CupertinoListTile(
-                title: Text(licenseplate),
-                backgroundColor: CupertinoColors.lightBackgroundGray,
-              ),
-              CupertinoListTile(
-                title: Text(icon),
-              ),
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Row(
+              children: [
+                Icon(
+                  icon,
+                  size: 50,
+                  color: CupertinoColors.activeGreen,
+                ),
+                Column(
+                  children: [
+                    Text(title,
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: CupertinoColors.activeGreen,
+                      )
+                    ),
+                    Text(
+                      text,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        color: CupertinoColors.systemGrey,
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          )
         ],
-      );
+      ),
+    );
   }
 }
