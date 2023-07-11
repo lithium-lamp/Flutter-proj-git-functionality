@@ -14,7 +14,7 @@ void main() => runApp(MaterialApp(
     },
     title: 'GNav',
     theme: ThemeData(
-      primaryColor: const Color.fromARGB(255, 91, 199, 171),
+      primaryColor: const Color.fromARGB(255, 180, 212, 179),
     ),
     home: const MyApp()));
 
@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 183, 211, 183),
+          color: const Color.fromARGB(255, 180, 212, 179),
           boxShadow: [
             BoxShadow(
               blurRadius: 20,
@@ -57,10 +57,10 @@ class _MyAppState extends State<MyApp> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
             child: GNav(
-              rippleColor: const Color.fromARGB(255, 145, 235, 192),
-              hoverColor: const Color.fromARGB(255, 142, 230, 176),
+              rippleColor: const Color.fromARGB(255, 180, 212, 179),
+              hoverColor: const Color.fromARGB(255, 180, 212, 179),
               gap: 8,
-              activeColor: const Color.fromARGB(255, 112, 196, 120),
+              activeColor: const Color.fromARGB(255, 180, 212, 179),
               iconSize: 24,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: const Duration(milliseconds: 400),

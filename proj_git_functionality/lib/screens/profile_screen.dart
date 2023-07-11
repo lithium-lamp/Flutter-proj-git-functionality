@@ -23,8 +23,8 @@ class ProfileScreen extends StatelessWidget {
           const ProfilebuttonWidget(icon: LineIcons.cog, title: 'Settings'),
           const ProfilebuttonWidget(icon: LineIcons.creditCard, title: 'Billing'),
           const Padding(padding:EdgeInsets.all(10)),
-            const ProfilebuttonWidget(icon: LineIcons.infoCircle, title: 'Information'),
-            const ProfilebuttonWidget(icon: LineIcons.powerOff, title: 'Log out')
+          const ProfilebuttonWidget(icon: LineIcons.infoCircle, title: 'Information'),
+          const ProfilebuttonWidget(icon: LineIcons.powerOff, title: 'Log out')
           ,
           const SizedBox(height: 30),
             CupertinoButton(
