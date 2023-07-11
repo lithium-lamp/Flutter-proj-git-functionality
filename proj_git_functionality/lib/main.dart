@@ -1,7 +1,7 @@
 import './screens/home_screen.dart';
 import './screens/profile_screen.dart';
-import './screens/settings_screen.dart';
 import './screens/map_screen.dart';
+import './screens/history_screen.dart';
 
 
 import 'package:flutter/material.dart';
@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     MapScreen(),
-    SettingsScreen(),
+    HistoryScreen(),
     ProfileScreen(),
   ];
 
