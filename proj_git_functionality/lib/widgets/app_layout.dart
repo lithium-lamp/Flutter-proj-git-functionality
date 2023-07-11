@@ -10,7 +10,7 @@ class AppLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: Text(title),
+        middle: Text(title), backgroundColor: const Color.fromARGB(255, 180, 212, 179),
       ),
       child: SafeArea(
         child: child,

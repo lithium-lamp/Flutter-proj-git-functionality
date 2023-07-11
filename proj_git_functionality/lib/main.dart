@@ -14,7 +14,7 @@ void main() => runApp(MaterialApp(
     },
     title: 'GNav',
     theme: ThemeData(
-      primaryColor: Colors.grey[800],
+      primaryColor: const Color.fromARGB(255, 91, 199, 171),
     ),
     home: const MyApp()));
 
@@ -38,14 +38,14 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 180, 212, 179),
       
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: const Color.fromARGB(255, 183, 211, 183),
           boxShadow: [
             BoxShadow(
               blurRadius: 20,
@@ -57,14 +57,14 @@ class _MyAppState extends State<MyApp> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
             child: GNav(
-              rippleColor: Colors.grey[300]!,
-              hoverColor: Colors.grey[100]!,
+              rippleColor: const Color.fromARGB(255, 145, 235, 192),
+              hoverColor: const Color.fromARGB(255, 142, 230, 176),
               gap: 8,
-              activeColor: Colors.black,
+              activeColor: const Color.fromARGB(255, 112, 196, 120),
               iconSize: 24,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: const Duration(milliseconds: 400),
-              tabBackgroundColor: Colors.grey[100]!,
+              tabBackgroundColor: const Color.fromARGB(255, 245, 245, 245),
               color: Colors.black,
               tabs: const [
                 GButton(
