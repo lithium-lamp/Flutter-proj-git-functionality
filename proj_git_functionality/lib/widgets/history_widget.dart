@@ -25,7 +25,6 @@ class HistoryWidget extends StatelessWidget {
               CupertinoListTile(
                 title: const Text('Vehicle'),
                 additionalInfo: Text(vehicle),
-                
               ),
               const CupertinoListTile(
                 title: Text('Additional information'),

@@ -9,8 +9,12 @@ class HistoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const AppLayout(
       title: 'History',
-      child: HistoryWidget(adress: 'myadress', date: '01-01-01',
-      vehicle: 'myvehicle'),
+      child: Stack(
+        children: [
+          HistoryWidget(
+              key: Key('widget2'), adress: 'someoadress', date: '02-02-02', vehicle: 'theirvehicle'),
+        ],
+      ),
     );
   }
 }
