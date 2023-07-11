@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           VehicleWidget(key: Key('myvehicle1'), icon: LineIcons.car, title: 'Volvo XC60', text: 'XYZ123'),
           MapWidget(),
-          HistoryWidget(key: Key('main1'), adress: 'Applegarden street 13B', date: '02-02-23', vehicle: 'Volvo XC60'),
+          HistoryWidget(key: Key('main1'), adress: 'Applegarden street 13B', date: '02-02-23 12:45', vehicle: 'Volvo XC60'),
         ],
       ),
     );
