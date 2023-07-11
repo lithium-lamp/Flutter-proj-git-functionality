@@ -1,1 +1,7 @@
 proj_git_functionality/android/app/src/main/res/values/api-keys.xml
+proj_git_functionality/macos/Runner/GoogleService-Info.plist
+proj_git_functionality/lib/firebase_options.dart
+proj_git_functionality/ios/Runner/GoogleService-Info.plist
+proj_git_functionality/android/app/google-services.json
+proj_git_functionality/ios/firebase_app_id_file.json
+proj_git_functionality/macos/firebase_app_id_file.json
