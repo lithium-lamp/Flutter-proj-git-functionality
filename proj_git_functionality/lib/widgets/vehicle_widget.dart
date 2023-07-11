@@ -20,10 +20,9 @@ class VehicleWidget extends StatelessWidget {
         // Add your functionality here
       },
       child: CupertinoListSection.insetGrouped(
-        //padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         children: [
           Padding(
-            padding: const EdgeInsets.all(18.0),
+            padding: const EdgeInsets.all(18),
             child: Row(
               children: [
                 Icon(
@@ -31,24 +30,27 @@ class VehicleWidget extends StatelessWidget {
                   size: 50,
                   color: CupertinoColors.activeGreen,
                 ),
-                Column(
-                  children: [
-                    Text(title,
-                      style: const TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: CupertinoColors.activeGreen,
-                      )
-                    ),
-                    Text(
-                      text,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        color: CupertinoColors.systemGrey,
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: Column(
+                    children: [
+                      Text(title,
+                        style: const TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: CupertinoColors.systemGrey,
+                        )
                       ),
-                    )
-                  ],
-                )
+                      Text(
+                        text,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          color: CupertinoColors.systemGrey2,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           )

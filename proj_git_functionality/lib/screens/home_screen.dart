@@ -14,19 +14,13 @@ class HomeScreen extends StatelessWidget {
       child: Column(
         children: [
           Expanded(
-            child: Center(
-              child: VehicleWidget(key: Key('myvehicle1'), icon: LineIcons.car, title: 'Volvo xc60', text: 'XYZ123')
-            ),
+            child: VehicleWidget(key: Key('myvehicle1'), icon: LineIcons.car, title: 'Volvo XC60', text: 'XYZ123'),
           ),
           Expanded(
-            child: Center(
-              child: VehicleWidget(key: Key('vehicle1'), icon: LineIcons.car, title: 'Volvo xc60', text: 'XYZ123')
-            ),
+            child: Text('mytext goes here'),
           ),
           Expanded(
-            child: Center(
-              child: HistoryWidget(key: Key('main1'), adress: 'myadresses', date: '02-02-23', vehicle: 'mydcar')
-            ),
+            child: HistoryWidget(key: Key('main1'), adress: 'myadresses', date: '02-02-23', vehicle: 'mydcar'),
           ),
         ],
       ),
