@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapWidget extends StatefulWidget {
@@ -13,6 +14,8 @@ class _MapWidgetState extends State<MapWidget> {
 
   final LatLng _center = const LatLng(-33.86, 151.20);
 
+  
+
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
   }
@@ -25,6 +28,16 @@ class _MapWidgetState extends State<MapWidget> {
         // Add your functionality here
       },
       child: CupertinoListSection.insetGrouped(
+        backgroundColor:const Color.fromARGB(0, 0, 0, 0),
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 239, 239, 239),
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 20,
+              color: Colors.black.withOpacity(.1),
+            )
+          ],
+        ),
         children: [
           SizedBox(
             height: 300,

@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class HistoryWidget extends StatelessWidget {
   final String adress;
@@ -12,6 +13,16 @@ class HistoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoListSection.insetGrouped(
+      backgroundColor:const Color.fromARGB(0, 0, 0, 0),
+      decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 239, 239, 239),
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 20,
+              color: Colors.black.withOpacity(.1),
+            )
+          ],
+        ),
         children: [
               CupertinoListTile(
                 title: const Text('Adress'),

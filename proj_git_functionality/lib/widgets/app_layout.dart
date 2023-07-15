@@ -10,6 +10,7 @@ class AppLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      backgroundColor:const Color.fromARGB(255, 190, 228, 188),
       navigationBar: CupertinoNavigationBar(
         leading: const Icon(LineIcons.bell),
         middle: Text(

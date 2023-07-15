@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class VehicleWidget extends StatelessWidget {
   final IconData icon;
@@ -20,6 +21,16 @@ class VehicleWidget extends StatelessWidget {
         // Add your functionality here
       },
       child: CupertinoListSection.insetGrouped(
+        backgroundColor:const Color.fromARGB(0, 0, 0, 0),
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 239, 239, 239),
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 20,
+              color: Colors.black.withOpacity(.1),
+            )
+          ],
+        ),
         children: [
           Padding(
             padding: const EdgeInsets.all(18),

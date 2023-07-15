@@ -1,0 +1,9 @@
+2023-07-15 ---------------------------------------------------------------------
+this should be placed in this androidmanifest xml in android > app > main file 
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+TEST with
+-Xlint:deprecation to fix build
+--------------------------------------------------------------------------------
